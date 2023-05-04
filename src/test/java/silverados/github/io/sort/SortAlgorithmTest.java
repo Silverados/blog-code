@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SortAlgorithmTest {
 
-    public static final int MIN = -50;
-    public static final int MAX = 50;
+    public static final int MIN = -500;
+    public static final int MAX = 500;
     public static final int COUNT = 200;
 
     public static int[] generateArray() {
@@ -22,11 +22,42 @@ class SortAlgorithmTest {
     }
 
     @Test
-    void sort() {
+    void insertSort() {
         int[] arr = generateArray();
         SortAlgorithm sortAlgorithm = new InsertSort();
         sortAlgorithm.sort(arr);
         assertTrue(sortAlgorithm.isSorted(arr));
     }
 
+    @Test
+    void selectSort() {
+        int[] arr = generateArray();
+        SortAlgorithm sortAlgorithm = new SelectSort();
+        sortAlgorithm.sort(arr);
+        assertTrue(sortAlgorithm.isSorted(arr));
+    }
+
+    @Test
+    void bubbleSort() {
+        int[] arr = generateArray();
+        SortAlgorithm sortAlgorithm = new BubbleSort();
+        sortAlgorithm.sort(arr);
+        assertTrue(sortAlgorithm.isSorted(arr));
+    }
+
+    @Test
+    void mergeSort() {
+        int[] arr = generateArray();
+        SortAlgorithm sortAlgorithm = new MergeSort();
+        sortAlgorithm.sort(arr);
+        assertTrue(sortAlgorithm.isSorted(arr));
+    }
+
+    @Test
+    void quickSort() {
+        int[] arr = generateArray();
+        SortAlgorithm sortAlgorithm = new QuickSort();
+        sortAlgorithm.sort(arr);
+        assertTrue(sortAlgorithm.isSorted(arr));
+    }
 }
