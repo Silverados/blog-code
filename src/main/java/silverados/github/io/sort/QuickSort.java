@@ -31,5 +31,4 @@ public class QuickSort implements SortAlgorithm {
         swap(arr, more, high - 1);
         return new int[]{less + 1, more};
     }
-
 }

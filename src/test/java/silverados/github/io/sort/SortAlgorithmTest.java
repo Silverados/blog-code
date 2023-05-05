@@ -60,4 +60,12 @@ class SortAlgorithmTest {
         sortAlgorithm.sort(arr);
         assertTrue(sortAlgorithm.isSorted(arr));
     }
+
+    @Test
+    void heapSort() {
+        int[] arr = generateArray();
+        SortAlgorithm sortAlgorithm = new HeapSort();
+        sortAlgorithm.sort(arr);
+        assertTrue(sortAlgorithm.isSorted(arr));
+    }
 }
