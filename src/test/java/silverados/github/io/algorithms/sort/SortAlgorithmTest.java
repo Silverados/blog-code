@@ -1,4 +1,4 @@
-package silverados.github.io.sort;
+package silverados.github.io.algorithms.sort;
 
 import org.junit.jupiter.api.Test;
 

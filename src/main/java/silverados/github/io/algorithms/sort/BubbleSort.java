@@ -1,4 +1,4 @@
-package silverados.github.io.sort;
+package silverados.github.io.algorithms.sort;
 
 public class BubbleSort implements SortAlgorithm {
     @Override
